@@ -10,8 +10,7 @@ const Shape = class {
         key: 'donut',
         run(args) {
             let { innerRadius, outerRadius, ellipse } = args
-            if (innerRadius == null || outerRadius == null) 
-                throw new ShapeError(`Cannot create saved shape 'donut' without object entr${innerRadius == null || outerRadius == null ? 'ies \'innerRadius\' and \'outerRadius\'.' : `y '${innerRadius == null ? 'innerRadius' : 'outerRadius'}'`}`)
+            if (innerRadius == null || outerRadius == null) Shape.panic('missingArgs', ['retrieve(...)', ['innerRadius', 'outerRadius']])    
 
             let outerCircle = this.circle({ radius: outerRadius, points: 40, ellipse: ellipse })
 
