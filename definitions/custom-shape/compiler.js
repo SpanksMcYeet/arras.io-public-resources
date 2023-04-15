@@ -119,3 +119,5 @@ const HalfShape = class extends Shape {
         return this
     }
 }
+
+export default Shape
