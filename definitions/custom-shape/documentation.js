@@ -77,7 +77,7 @@ Class.basic = {
 Shape.saved is an array that stores objects that contain a key and a method to execute shape compilation code.
 If you want to add your own custom math for a custom shape that you won't use as common star() or circle(), this would be where to put it.
 
-The example above is the cutter shape code, better known as the smasher-esque body of Diggers from digdig.io
+The example below is the cutter shape code, better known as the smasher-esque body of Diggers from digdig.io
 The object needs a key and a run method so the retrieve() method can read and send data to it.
 */
 static saved = [{ // EXAMPLE
