@@ -41,8 +41,8 @@ Class.basic = {
   */
   ({ 
     points: 30, // REQUIRED! Failure to import a value for item points will result in a panic! Adds points to the circle, which makes it look more smooth
-    radius = 1, // Not required, but will change the radius of the circle if you so please.
-    ellipse = { x: 1.2, y: 0.8 } // Not required, but will turn the circle into an ellipse by multiplying every matching coordinate point by the given ellipse values
+    radius: 1, // Not required, but will change the radius of the circle if you so please.
+    ellipse: { x: 1.2, y: 0.8 } // Not required, but will turn the circle into an ellipse by multiplying every matching coordinate point by the given ellipse values
   })
 }
 
